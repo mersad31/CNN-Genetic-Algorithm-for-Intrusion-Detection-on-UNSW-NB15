@@ -11,8 +11,8 @@ def preprocess_unsw_nb15():
     """
     # Step 1: Load the official train and test sets
     try:
-        train_df = pd.read_csv('/content/drive/MyDrive/Copy of UNSW_NB15_training-set.csv')
-        test_df = pd.read_csv('/content/drive/MyDrive/Copy of UNSW_NB15_testing-set.csv')
+        train_df = pd.read_csv('write your train file path')
+        test_df = pd.read_csv('write your test file path')
     except FileNotFoundError as e:
         print(f"Error loading data file: {e}")
         return None, None, None, None
